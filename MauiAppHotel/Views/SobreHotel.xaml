@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreHotel"
+             Title="Sobre o Aplicativo de Hotel"
+             BackgroundColor="{StaticResource Gray200}">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Label Text="Sobre"
+                   FontFamily="Lexend"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="{StaticResource Primary}" />
+
+            <Frame Padding="15" CornerRadius="10" BackgroundColor="{StaticResource Primary}" HasShadow="True">
+                <Label Text="Esse app hotel é um projeto de como seria um aplicativo mobile de hospedagem de hotel, desenvolvido com auxilio do material de DSII-13."
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center" />
+            </Frame>
+
+            <Label Text="Criado por: "
+                   FontSize="20"
+                   HorizontalOptions="Center" 
+                   TextColor="{StaticResource Primary}" />
+
+            <Label Text="Pedro Henrique de Sousa Freires"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    TextColor="Black" />
+
+            <Label Text=" Novembro de 2024"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    TextColor="{StaticResource Primary}" />
+
+            <Button Text="Voltar"
+                    BackgroundColor="MediumPurple"
+                    TextColor="White"
+                    Clicked="OnVoltarClicked"
+                    Margin="0,20,0,0"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
